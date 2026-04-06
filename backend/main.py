@@ -62,14 +62,12 @@ def analyze(req: RequestData):
             }
         )
 
-        # 3. Access the parsed object directly
-        # The SDK automatically handles the JSON parsing when response_schema is provided
+        # Access the parsed object directly
         if not response.parsed:
             raise HTTPException(status_code=502, detail="AI returned empty response")
         return response.parsed
 
     except Exception as e:
-        # Note the 'f' before the quotes!
         print(f"ACTUAL ERROR: {type(e).__name__}: {e}") 
         raise HTTPException(status_code=500, detail=str(e))
 
