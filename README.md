@@ -28,7 +28,7 @@ Built to demonstrate rapid concept validation workflows.
 
 ## Getting Started
 
-###Prerequisites
+### Prerequisites
 Make sure you have the following installed on your machine:
 
 - **[Node.js](https://nodejs.org)** (v18 or higher recommended)
